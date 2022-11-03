@@ -1,0 +1,61 @@
+﻿@model Quadro_Operacional.Models.Quadro
+
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+<h1>Confirme a matricula a ser deletada</h1>
+
+<div class="col-md-12">
+    <div class="table-responsive">
+        <div id="indicadores" class="table table-striped table-hover">
+                <table>
+                    <thead>
+                        @*<input id="myInput" onkeyup="tabela_glossario()" placeholder="INDICADOR" class="input-sm form-control search-input" type="text" style="margin-left: -1px; width: 210px;">*@
+                    <tr style='font-weight: bold; background-color: #19022A; text-align: center; border-bottom: 1px solid #e1ab91 ! important;'>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Matricula)
+                            </th>
+                            <th style="min-width: 200px">
+                                @Html.DisplayNameFor(model => model.Funcionario)
+                            </th>
+                            <th style="min-width: 50px; text-align: center;">
+                                @Html.DisplayNameFor(model => model.Ps)
+                            </th>
+                            <th style="min-width: 50px; text-align: center;">
+                                @Html.DisplayNameFor(model => model.Logid)
+                            </th>
+                            <th style="min-width: 50px; text-align: center;">
+                                @Html.DisplayNameFor(model => model.Celula)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="text-align: center;">
+                            <td>
+                                @Html.DisplayFor(model => model.Matricula)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Funcionario)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Ps)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Logid)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(model => model.Celula)
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <br />
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="@Model.Matricula" />
+            <input type="submit" value="Delete" class="fadeIn fourth btn buttone btn-danger" /> |
+            <a asp-action="Index" class="fadeIn fourth btn volta-quadro">Voltar ao Quadro</a>
+        </form>
+    </div>
+</div>

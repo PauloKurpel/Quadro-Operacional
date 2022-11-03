@@ -1,0 +1,179 @@
+﻿@model Quadro_Operacional.Models.Quadro
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h1>Detalhes</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Matricula)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Matricula)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Funcionario)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Funcionario)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Ps)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Ps)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Logid)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Logid)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Situacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Situacao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Coordenador)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Coordenador)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Supervisor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Supervisor)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Admissao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Admissao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Funcao)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Funcao)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Entrada)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Entrada)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Saida)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Saida)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Intervalo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Intervalo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Desligamento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Desligamento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Genero)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Genero)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cpf)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cpf)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Rg)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Rg)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Uf)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Uf)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Celular)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Celular)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado_Civil)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estado_Civil)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Escolaridade)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Escolaridade)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Experiencia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Experiencia)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Experiencia_Pg)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Experiencia_Pg)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Contrato_Temp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Contrato_Temp)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Ferias)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Ferias)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Dt_Ferias_Fim)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Dt_Ferias_Fim)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Matricula" class="btn btn-outline-info">Editar</a> |
+    <a asp-action="Index" class="btn btn-info">Voltar ao Quadro</a>
+</div>

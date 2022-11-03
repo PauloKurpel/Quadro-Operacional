@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+	<head>
+		<title>Command Center - MIS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="refresh" content="1200" />
+        <link rel="icon" type="image/png" href="~/images/favicon.png">
+        <script src="~/js/jquery-1.6.4.js" type="text/javascript"></script>
+        <script type="application/x-javascript">
+            addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+            }, false);
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        @*<!-- bootstrap-css -->*@
+        <link rel="stylesheet" href="~/css/bootstrap.min.css">
+        @*<!-- Custom CSS -->*@
+        <link rel="stylesheet" type="text/css" href="~/css/stylop.css"/>
+        <link rel="stylesheet" type="text/css" href="~/css/style-responsive.css"/>
+        @*<!-- fontes CSS -->*@
+        <link
+            href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+            rel='stylesheet' type='text/css'>
+        @*<!-- font-awesome icones -->*@
+        <link rel="stylesheet" href="~/css/font.css" type="text/css" />
+        <link href="~/css/font-awesome.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+        <script src="~/js/sobem.js"></script>
+        <script src="~/js/excel.js"></script>
+        <script src="~/js/jquery.base64.js"></script>
+        <script src="~/js/jquery.btechco.excelexport.js"></script>
+	</head>
+	<body>
+		<section id="container">
+			    @*<!--header inicio-->*@
+            <header class="header fixed-top clearfix">
+                <div class="brand">
+                    <a href="#" class="logo">
+                    <img src="~/images/dbm_nav.png">
+                    </a>
+                    <div class="sidebar-toggle-box">
+                        <div class="fa fa-bars"></div>
+                    </div>
+                </div>
+                @*<a href="logout.php" class="log-out waves-effect waves-button waves-classic sair">
+                    <span><i class="fa fa-sign-out m-r-xs"></i></span>
+                </a>*@
+            </header>
+                @*<!--header fim-->
+                <!--sidebar comeco-->*@
+            <aside>
+                <div id="sidebar" class="nav-collapse">
+                    <div class="leftside-navigation">
+                        <ul class="sidebar-menu" id="nav-accordion">
+                            @*<li>
+                                <a asp-action="#">
+                                <i class="fa fa-dashboard"></i>
+                                    <span>Insights</span>
+                                </a>
+                            </li>*@
+                            <li>
+                                <a asp-action="Index">
+                                    <i class="fa fa-th-list"></i>
+                                    <span>Quadro Operacional</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+                @*<!--sidebar final-->
+                <!--main content comeco-->*@
+            <section  id="main-content">
+                <section class="wrapper">
+                <div class="table-agile-info" style="min-height: 100%; color: #fff; font-weight: bold;">
+                        <div class="panel-default">
+                            @RenderBody()            
+                        </div>
+                    </div>
+                    <br />
+                </section>
+            </section>
+		</section>
+        <a id="subirTopo" style="background: rgba(29, 18, 46, 0.335); border: 1px solid rgba(29, 18, 46, 0.235); border-radius: 50px; width: 50px; height: 50px; position: fixed; color: #fff; bottom: 30px; right: 25px; text-decoration: none; font-size: 15px; text-align: center; padding: 15px; cursor: pointer;">
+            <i class="fa fa-arrow-up"></i>
+        </a>
+        <div class="footered fixed-top">
+            <span class="copyright" style="font-weight: bold; opacity: 85%; font-size: 12px;">
+                ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script> - MIS - dbm Contact Center
+            </span>
+        </div>
+        <script src="~/jsi/bootstrap.js"></script>
+        <script src="~/jsi/jquery.dcjqaccordion.2.7.js"></script>
+        <script src="~/jsi/scripts.js"></script>
+        <script src="~/jsi/jquery.slimscroll.js"></script>
+        <script src="~/jsi/jquery.nicescroll.js"></script>
+        @*<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->*@
+        <script src="~/jsi/jquery.scrollTo.js"></script>
+        @*<script src="~/js/csv.js"></script>*@
+        <script src="~/js/tabela.js"></script>
+        @RenderSection("Scripts", required: false)
+	</body>
+</html>
