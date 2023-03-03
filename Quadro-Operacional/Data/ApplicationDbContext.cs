@@ -9,7 +9,7 @@ namespace Quadro_Operacional.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=10.0.0.6;Database=PRO_MIS_AMIL;User ID=Control_Desk;Password=123456;Integrated Security=False");
+            optionsBuilder.UseSqlServer(@"Server=local;Database=baseLocal;User ID=admin;Password=123456;Integrated Security=False");
         }
     }
 }
